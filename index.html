@@ -518,7 +518,7 @@
 
                   <div class="detail">
                     <div class="label">Hora</div>
-                    <div class="value" id="timeText">12:00 p. m.</div>
+                    <div class="value" id="timeText">11:00 p. m.</div>
                   </div>
 
                   <div class="detail">
@@ -592,9 +592,9 @@
     const RSVP_DISPLAY = "0999865297";
     const WHATSAPP_NUM = "593999865297"; // sin +
 
-    const EVENT_LOCAL_ISO = "2026-03-07T12:00:00-05:00";
+    const EVENT_LOCAL_ISO = "2026-03-07T11:00:00-05:00";
     const DATE_TEXT = "Sábado, 7 de marzo de 2026";
-    const TIME_TEXT = "12:00 p. m.";
+    const TIME_TEXT = "11:00 p. m.";
     // ===============================================================
 
     // Fill text
@@ -617,8 +617,9 @@
     const calText = encodeURIComponent("Renovación de votos - Raúl y Ana");
     const calDetails = encodeURIComponent("Ceremonia cristiana y celebración de 25 años de matrimonio.");
     const calLocation = encodeURIComponent(`${PLACE_NAME} - ${PLACE_ADDR}`);
-    const calStart = "20260307T170000Z"; // 12:00 UTC-5
-    const calEnd   = "20260307T190000Z";
+    const calStart = "20260307T160000Z"; // 11:00 UTC-5
+    const calEnd   = "20260307T180000Z"; // +2 horas
+
     document.getElementById("calBtn").href =
       `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${calText}&dates=${calStart}/${calEnd}&details=${calDetails}&location=${calLocation}`;
 
